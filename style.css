@@ -77,8 +77,19 @@
 /*HEADER END*/
 
 /*BODY START*/
+header, footer {
+    flex: 0 0 auto;
+}
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
+    height: 100%;
+    position: relative;
+    padding-bottom: 400px;
+    flex: 1 0 auto;
 }
 
 .header {
@@ -134,7 +145,7 @@ input[type=submit] {
     background-color: gray;
     padding: 20px;
     margin: 20px 80px 20px 80px;
-    
+    position: relative;
 }
 
 .col-25 {
@@ -178,17 +189,33 @@ margin-top: 0;
 }
 /*BODY END*/
 
+.page-wrapper {
+    min-height: 100%;
+}
 /* FOOTER START */
 .footer {
-    background: blueviolet;
+    /* background: blueviolet;
     color: firebrick;
     height: 400px;
-    display:none;
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding-bottom: 400px; */ 
+   
+    left: 0; bottom: 0;
+    width: 100%;
+    background-color: indigo;
+    color: wheat;
+    text-align: center;
+    height: 300px; 
+
+    
+    
 }
 
 .footer .footer-content {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 350px;
+     
     
 }
 
@@ -200,7 +227,7 @@ margin-top: 0;
     position: absolute;
     text-align: center;
     bottom: 0px;
-    left: 2px;
+    left: 0px;
     padding-top: 20px;
     
 }
