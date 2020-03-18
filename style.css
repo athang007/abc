@@ -77,9 +77,9 @@
 /*HEADER END*/
 
 /*BODY START*/
-header, footer {
+/*header, footer {
     flex: 0 0 auto;
-}
+} */
 html {
     height: 100%;
 }
@@ -88,8 +88,8 @@ body {
     margin: 0;
     height: 100%;
     position: relative;
-    padding-bottom: 400px;
-    flex: 1 0 auto;
+    padding-bottom: 300px;
+   
 }
 
 .header {
@@ -98,6 +98,7 @@ body {
 }
 form {
     box-sizing: border-box;
+    min-height: 100%;
     /*margin: 0;*/
 }
 
@@ -146,6 +147,7 @@ input[type=submit] {
     padding: 20px;
     margin: 20px 80px 20px 80px;
     position: relative;
+   
 }
 
 .col-25 {
@@ -207,7 +209,8 @@ margin-top: 0;
     color: wheat;
     text-align: center;
     height: 300px; 
-
+    clear: both;
+    
     
     
 }
@@ -229,7 +232,7 @@ margin-top: 0;
     bottom: 0px;
     left: 0px;
     padding-top: 20px;
-    
+    display: none;
 }
 
 /* FOOTER END */ 
